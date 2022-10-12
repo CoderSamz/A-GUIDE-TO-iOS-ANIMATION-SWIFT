@@ -30,10 +30,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didValueChanged(_ sender: UISlider) {
-        if let slider = sender as? UISlider {
-            progressLabel.text = "Current: \(slider.value)"
-            circleView.circleLayer.progress = CGFloat(slider.value)
-        }
+        
+        progressLabel.text = "Current: \(sender.value)"
+        circleView.circleLayer.progress = CGFloat(sender.value)
+    
     }
 
 
